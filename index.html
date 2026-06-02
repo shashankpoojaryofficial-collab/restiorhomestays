@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restior homestay | Udupi</title>
+<meta name="description" content="Affordable and comfortable homestay in Katapadi, Udupi. AC room, Wi-Fi, kitchenette, parking and private stay from ₹699 per night.">
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+:root{
+--primary:#0F4C81;
+--secondary:#D4A373;
+--dark:#1A1A1A;
+--light:#F8F9FA;
+--white:#FFFFFF;
+}
+
+body{
+font-family:'Segoe UI',sans-serif;
+background:#f8f9fa;
+color:#333;
+line-height:1.6;
+}
+
+/* Navbar */
+nav{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:rgba(255,255,255,.95);
+backdrop-filter:blur(10px);
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 8%;
+box-shadow:0 2px 15px rgba(0,0,0,.08);
+z-index:1000;
+}
+
+.logo{
+font-size:24px;
+font-weight:700;
+color:var(--primary);
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav a{
+text-decoration:none;
+color:#333;
+font-weight:600;
+transition:.3s;
+}
+
+nav a:hover{
+color:var(--primary);
+}
+
+/* Hero */
+header{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url('room1.jpg');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+color:white;
+}
+
+.hero-content{
+background:rgba(255,255,255,.12);
+backdrop-filter:blur(12px);
+padding:50px;
+border-radius:20px;
+max-width:700px;
+}
+
+.hero-content h1{
+font-size:4rem;
+margin-bottom:10px;
+}
+
+.hero-content p{
+font-size:1.2rem;
+margin-bottom:12px;
+}
+
+.btn{
+display:inline-block;
+margin-top:15px;
+padding:15px 35px;
+background:var(--primary);
+color:white;
+text-decoration:none;
+border-radius:50px;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+background:#093457;
+transform:translateY(-3px);
+}
+
+/* Sections */
+section{
+padding:90px 10%;
+background:white;
+}
+
+section:nth-child(even){
+background:#f5f7fa;
+}
+
+.section-title{
+text-align:center;
+font-size:2.3rem;
+color:var(--primary);
+margin-bottom:40px;
+}
+
+.about{
+max-width:850px;
+margin:auto;
+text-align:center;
+font-size:18px;
+}
+
+/* Cards */
+.features,
+.attractions,
+.reviews{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+margin:10px 0;
+color:var(--primary);
+}
+
+/* Gallery */
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:260px;
+object-fit:cover;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+/* Contact */
+.contact{
+text-align:center;
+font-size:18px;
+}
+
+.contact p{
+margin:12px 0;
+}
+
+.contact a{
+color:var(--primary);
+text-decoration:none;
+}
+
+/* Footer */
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+/* WhatsApp */
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+width:65px;
+height:65px;
+background:#25D366;
+color:white;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:32px;
+text-decoration:none;
+box-shadow:0 5px 15px rgba(0,0,0,.3);
+z-index:999;
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+nav{
+flex-direction:column;
+gap:10px;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+}
+
+.hero-content{
+padding:30px;
+}
+
+.hero-content h1{
+font-size:2.4rem;
+}
+
+.hero-content p{
+font-size:1rem;
+}
+
+.section-title{
+font-size:2rem;
+}
+}
+</style>
+
+</head>
+
+<body>
+
+<nav>
+<div class="logo">RESTIOR HOMESTAYS</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#amenities">Amenities</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#attractions">Attractions</a></li>
+<li><a href="#reviews">Reviews</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<header>
+<div class="hero-content">
+<h1>RESTIOR HOMESTAYS</h1>
+<p>Comfort • Privacy • Relaxation</p>
+<p>Affordable Private Stay in Katapadi, Udupi by IRD</p>
+<p><strong>Starting from ₹699 Per Night</strong></p>
+
+<a class="btn"
+href="https://wa.me/919036074577?text=Hello%20Restior%20Homestay,%20I%20would%20like%20to%20book%20a%20room."
+target="_blank">
+Book on WhatsApp </a>
+
+</div>
+</header>
+
+<section id="about">
+<h2 class="section-title">Welcome to Restior Homestay</h2>
+
+<div class="about">
+Enjoy a peaceful and affordable stay in Katapadi, Udupi. Our homestay offers a clean AC room, free Wi-Fi, kitchenette, microwave oven, free parking, and a relaxing atmosphere perfect for couples, families, and travelers.
+</div>
+</section>
+
+<section id="amenities">
+<h2 class="section-title">Amenities</h2>
+
+<div class="features">
+<div class="card">❄️ Air Conditioning</div>
+<div class="card">📶 High-Speed Wi-Fi</div>
+<div class="card">🛏️ Comfortable Double Bed</div>
+<div class="card">🍵 Electric Kettle</div>
+<div class="card">🔥 Microwave Oven</div>
+<div class="card">🍽️ Kitchenette</div>
+<div class="card">🚗 Free Parking</div>
+<div class="card">🏠 Private Stay</div>
+</div>
+</section>
+
+<section id="gallery">
+<h2 class="section-title">Gallery</h2>
+
+<div class="gallery">
+<img src="photo1.jpg.jpeg" alt="Bedroom">
+<img src="photo2.jpg.jpeg" alt="Room Interior">
+<img src="photo3.jpg.jpeg" alt="Kitchenette">
+<img src="photo4.jpg.jpeg" alt="Washroom">
+<img src="photo5.jpg.jpeg" alt="Property View">
+<img src="photo6.jpg.jpeg" alt="Guest Area">
+</div>
+</section>
+
+<section id="attractions">
+<h2 class="section-title">Nearby Attractions</h2>
+
+<div class="attractions">
+
+<div class="card">
+🏖️
+<h3>Mattu Beach</h3>
+<p>Peaceful beach known for stunning sunsets, clean shores, and a relaxing atmosphere.</p>
+</div>
+
+<div class="card">
+🏖️
+<h3>Malpe Beach</h3>
+<p>Popular beach destination offering beautiful sea views, water sports, and boat rides.</p>
+</div>
+
+<div class="card">
+🏝️
+<h3>St. Mary's Island</h3>
+<p>Famous for its unique basalt rock formations and picturesque coastal scenery.</p>
+</div>
+
+<div class="card">
+🛕
+<h3>Udupi Sri Krishna Temple</h3>
+<p>One of Karnataka's most revered temples, known for its rich heritage and spiritual significance.</p>
+</div>
+
+<div class="card">
+🌅
+<h3>Kaup Beach Lighthouse</h3>
+<p>Historic lighthouse offering breathtaking panoramic views of the Arabian Sea.</p>
+</div>
+
+<div class="card">
+🎓
+<h3>Manipal</h3>
+<p>A vibrant educational and cultural hub with cafes, shopping, and attractions.</p>
+</div>
+
+<div class="card">
+🌴
+<h3>Delta Beach</h3>
+<p>A serene beach where the river meets the sea, perfect for nature lovers and photography.</p>
+</div>
+
+<div class="card">
+🚤
+<h3>Kodi Bengre</h3>
+<p>Scenic coastal village known for beautiful backwaters, river views, and boat rides.</p>
+</div>
+
+</div>
+</section>
+
+<section id="reviews">
+<h2 class="section-title">Guest Reviews</h2>
+
+<div class="reviews">
+
+<div class="card">
+★★★★★
+<br><br>
+Very clean room and peaceful atmosphere. Excellent value for money.
+</div>
+
+<div class="card">
+★★★★★
+<br><br>
+Comfortable stay with all amenities. Highly recommended.
+</div>
+
+<div class="card">
+★★★★★
+<br><br>
+Great location and smooth check-in experience.
+</div>
+
+</div>
+</section>
+
+<section id="contact">
+<h2 class="section-title">Contact Us</h2>
+
+<div class="contact">
+<p>📞 Call: 9036074577</p>
+<p>💬 WhatsApp: 9036074577</p>
+<p>📍 Katapadi, Udupi, Karnataka</p>
+
+<p>
+<a href="https://maps.app.goo.gl/6Z2Qkjr8E9Mx1QMM8" target="_blank">
+View on Google Maps
+</a>
+</p>
+
+<p><strong>Price:</strong> ₹699 / Night</p>
+<p><strong>Maximum Guests:</strong> 3</p>
+<p><strong>Check-in:</strong> 11:00 AM</p>
+<p><strong>Check-out:</strong> 10:00 AM</p>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Restior Homestay. All Rights Reserved.</p>
+</footer>
+
+<a class="whatsapp"
+href="https://wa.me/919036074577?text=Hello%20Restior%20Homestay,%20I%20would%20like%20to%20book%20a%20room."
+target="_blank">
+💬 </a>
+
+</body>
+</html>
