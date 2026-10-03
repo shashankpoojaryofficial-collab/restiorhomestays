@@ -1,443 +1,264 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Restior homestay | Udupi</title>
-<meta name="description" content="Affordable and comfortable homestay in Katapadi, Udupi. AC room, Wi-Fi, kitchenette, parking and private stay from ₹699 per night.">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#071a3d"><meta name="description" content="Restior Stays — booking command center"><link rel="manifest" href="manifest.json"><title>Restior Stays • Command Center</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-scroll-behavior:smooth;
-}
+:root{--navy:#071a3d;--blue:#1769e8;--cyan:#18b7d6;--ink:#0d1830;--muted:#71809a;--bg:#f4f7fc;--card:#fff;--line:#e3e9f2;--green:#1ca66f;--amber:#f2ad22;--red:#e45656;--purple:#7440cf;--shadow:0 18px 55px rgba(20,46,91,.10);--r:22px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% -10%,#e7f5ff 0,transparent 35%),var(--bg);color:var(--ink);font-family:'DM Sans',sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer}.app{min-height:100vh}.top{height:72px;position:sticky;top:0;z-index:40;display:flex;align-items:center;padding:10px 18px;background:rgba(7,26,61,.96);backdrop-filter:blur(18px);color:#fff;box-shadow:0 10px 35px #06152d22}.brand{display:flex;gap:11px;align-items:center}.logo{width:45px;height:45px;border-radius:15px;background:linear-gradient(135deg,#fff,#b9f1ff);display:grid;place-items:center;color:var(--navy);font:800 20px Manrope;box-shadow:0 8px 25px #18b7d633}.brand strong{font:800 18px Manrope;display:block}.brand small{color:#aebfdf;font-size:11px}.nav{display:flex;gap:5px;margin-left:35px}.nav button{border:0;background:transparent;color:#b9c7e0;padding:10px 12px;border-radius:12px;font-weight:700}.nav button.active,.nav button:hover{background:#ffffff12;color:#fff}.top-actions{margin-left:auto;display:flex;gap:7px;align-items:center}.top-actions button{width:40px;height:40px;border:0;border-radius:12px;background:#ffffff10;color:#fff}.sync-dot{width:8px;height:8px;border-radius:50%;background:#30d38b;box-shadow:0 0 0 5px #30d38b22}.wrap{max-width:1540px;margin:auto;padding:25px 18px 60px}.hero{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:22px}.eyebrow{font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;color:var(--blue)}h1{font:800 clamp(28px,4vw,46px)/1.04 Manrope;letter-spacing:-.045em;margin:6px 0 9px}.sub{margin:0;color:var(--muted)}.controls{display:flex;gap:8px;align-items:center;background:var(--card);padding:7px;border:1px solid var(--line);border-radius:17px;box-shadow:var(--shadow)}.controls button{width:38px;height:38px;border:0;border-radius:11px;background:#f0f4fa;color:var(--navy);font-size:19px}.month{min-width:155px;text-align:center;font:800 14px Manrope}.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:17px}.stat{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:15px;box-shadow:var(--shadow);position:relative;overflow:hidden}.stat:after{content:'';position:absolute;right:-25px;top:-28px;width:80px;height:80px;border-radius:50%;background:#edf6ff}.stat small{color:var(--muted);font-weight:700}.stat b{display:block;font:800 25px Manrope;margin-top:5px}.stat .trend{font-size:10px;color:var(--green);font-weight:800}.layout{display:grid;grid-template-columns:minmax(0,1fr) 310px;gap:17px}.card{background:rgba(255,255,255,.94);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);overflow:hidden}.cardhead{padding:16px 19px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;align-items:center}.cardhead h2{font:800 17px Manrope;margin:0}.cal-select-wrap{margin-top:6px}.cal-select-wrap .select{padding:6px 9px;font-size:10px;max-width:210px}.legend{display:flex;gap:9px;flex-wrap:wrap;color:var(--muted);font-size:11px}.legend i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:4px}.calendar{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));overflow:visible}.dow{background:var(--navy);color:#fff;padding:11px 6px;text-align:center;font-size:10px;font-weight:800;letter-spacing:.08em}.day{min-height:155px;background:#fff;border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:9px;transition:.2s}.day:hover{background:#fbfdff}.day.muted{background:#f8fafc}.day.today{background:linear-gradient(#eef8ff,#fff)}.daynum{display:flex;justify-content:space-between;align-items:center;font:800 15px Manrope;margin-bottom:6px}.pill{font-size:8px;padding:4px 6px;border-radius:20px;background:#e5f6ff;color:#08799f}.room{display:grid;grid-template-columns:22px 28px 18px 30px minmax(0,1fr);gap:4px;align-items:center;padding:3px 0}.rdot{width:21px;height:21px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:10px;font-weight:800}.r1{background:#6fbd2d}.r2{background:#f0b31d}.r3{background:#1c68da}.r4{background:#7541cc}.check{width:17px;height:17px;accent-color:var(--blue)}.ac-badge{font-size:7px;font-weight:900;color:#0d6ea8;background:#e7f6ff;border-radius:5px;padding:3px 3px;min-width:24px;text-align:center}.info{width:29px;height:29px;border:0;border-radius:9px;background:#edf3fc;color:var(--blue);font-weight:800;transition:.18s}.info:hover{transform:translateY(-2px);background:#dfeaff}.amount{grid-column:5;display:flex;gap:2px;align-items:center;min-width:0}.amount span{font-size:10px;color:var(--muted)}.amount input{width:100%;min-width:0;border:0;border-bottom:1px dashed #cbd5e4;background:transparent;outline:0;font-size:10px;padding:2px}.booked-label{font-size:8px;color:var(--green);font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.side{padding:17px}.side h3{font:800 15px Manrope;margin:0 0 11px}.prop{padding:11px;border-radius:14px;background:#f5f8fc;margin-bottom:8px;display:flex;align-items:center;gap:9px}.prop .mini{width:29px;height:29px;border-radius:10px;color:#fff;display:grid;place-items:center;font-weight:800}.prop b{font-size:12px}.prop span{display:block;color:var(--muted);font-size:10px}.side-section{border-top:1px solid var(--line);padding-top:15px;margin-top:15px}.action{width:100%;border:0;border-radius:12px;padding:11px;background:var(--navy);color:#fff;font-weight:800;margin-top:7px}.action.alt{background:#edf3fb;color:var(--navy)}.recent{display:flex;flex-direction:column;gap:8px}.recent-item{border:1px solid var(--line);border-radius:12px;padding:9px;cursor:pointer}.recent-item:hover{background:#f8fbff}.recent-item b{display:block;font-size:11px}.recent-item span{font-size:10px;color:var(--muted)}.view{display:none}.view.active{display:block}.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}.search{flex:1;min-width:200px;padding:11px 13px;border:1px solid var(--line);border-radius:13px;background:#fff;outline:0}.select{padding:11px;border:1px solid var(--line);border-radius:13px;background:#fff}.table{width:100%;border-collapse:collapse}.table th,.table td{text-align:left;padding:12px;border-bottom:1px solid var(--line);font-size:12px}.table th{color:var(--muted);font-size:10px;text-transform:uppercase}.badge{padding:4px 7px;border-radius:20px;font-size:9px;font-weight:800}.paid{background:#e9f8f1;color:#16764f}.pending{background:#fff5df;color:#996600}.cancel{background:#fff0f0;color:#b23c3c}.properties-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.property-card{padding:17px}.property-card .big{height:120px;border-radius:17px;background:linear-gradient(135deg,#071a3d,#1b6be0);display:grid;place-items:center;color:#fff;font:800 40px Manrope;margin-bottom:13px}.property-card h3{font:800 16px Manrope;margin:0 0 4px}.property-card p{color:var(--muted);font-size:12px;margin:0}.modal-bg{position:fixed;inset:0;background:#021027aa;backdrop-filter:blur(9px);z-index:100;display:none;align-items:flex-end;justify-content:center}.modal-bg.open{display:flex;animation:fade .18s ease}.modal{width:min(690px,100%);max-height:93vh;overflow:auto;background:#fff;border-radius:26px 26px 0 0;padding:21px;animation:rise .24s ease}.modalhead{display:flex;justify-content:space-between;align-items:start}.modal h2{font:800 22px Manrope;margin:4px 0}.close{width:38px;height:38px;border:0;border-radius:12px;background:#edf2f8;font-size:20px}.form{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-top:17px}.field.full{grid-column:1/-1}.field label{display:block;font-size:10px;color:var(--muted);font-weight:800;text-transform:uppercase;letter-spacing:.06em;margin-bottom:5px}.field input,.field select,.field textarea{width:100%;padding:11px;border:1px solid #dce3ed;border-radius:12px;outline:0;background:#fbfcfe}.field textarea{min-height:82px;resize:vertical}.modalfoot{display:flex;gap:8px;justify-content:flex-end;margin-top:16px}.primary,.danger,.ghost{border:0;padding:11px 15px;border-radius:12px;font-weight:800}.primary{background:linear-gradient(135deg,var(--blue),#2996eb);color:#fff}.danger{background:#fff0f0;color:#b13c3c}.ghost{background:#edf3fb;color:var(--navy)}.whatsapp{background:#e8f8ef;color:#147c4e}.fab{display:none}.day.multi-selected{background:linear-gradient(135deg,#e9f4ff,#fff);box-shadow:inset 0 0 0 2px var(--blue);position:relative}.day.multi-selected:after{content:"✓";position:absolute;right:5px;top:4px;width:19px;height:19px;border-radius:50%;display:grid;place-items:center;background:var(--blue);color:#fff;font-size:11px;font-weight:800}.multi-bar{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:9px 11px;background:#eef6ff;border-bottom:1px solid #dbe8f7;font-size:11px;color:var(--navy)}.multi-bar b{font-weight:800}.multi-actions{display:flex;gap:5px}.multi-actions button{border:0;border-radius:9px;padding:7px 10px;font-size:10px;font-weight:800}.multi-done{background:var(--blue);color:#fff}.multi-clear{background:#fff;color:var(--navy);border:1px solid var(--line)!important}.multi-hint{color:var(--muted);font-size:10px}.stay-date-note{margin-top:5px;padding:8px 10px;border-radius:10px;background:#f5f8fc;color:var(--muted);font-size:10px}.date-sync{display:flex;gap:7px;flex-wrap:wrap;margin-top:6px}.date-sync button{border:0;border-radius:9px;padding:6px 9px;background:#edf3fb;color:var(--navy);font-size:9px;font-weight:800}.toast{position:fixed;left:50%;bottom:20px;transform:translate(-50%,25px);opacity:0;z-index:150;background:var(--navy);color:#fff;border-radius:14px;padding:12px 16px;box-shadow:0 18px 45px #0003;transition:.22s}.toast.show{opacity:1;transform:translate(-50%,0)}.confetti{position:fixed;z-index:200;width:7px;height:12px;pointer-events:none;animation:fall .9s ease-out forwards}@keyframes fade{from{opacity:0}to{opacity:1}}@keyframes rise{from{transform:translateY(25px);opacity:0}to{transform:none;opacity:1}}@keyframes fall{to{transform:translate(var(--x),var(--y)) rotate(600deg);opacity:0}}
+.wa-tools{margin-top:15px;padding:12px;border:1px solid #dfe8f3;border-radius:15px;background:#f7fbff;display:flex;justify-content:space-between;gap:12px;align-items:center}.wa-tools b{display:block;font-size:12px}.wa-tools span{display:block;color:var(--muted);font-size:10px;margin-top:2px}.wa-actions{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}.wa-actions .ghost{padding:8px 10px;font-size:10px}.wa-actions .whatsapp{background:#e8f8ef;color:#147c4e}@media(max-width:750px){.wa-tools{display:block}.wa-actions{margin-top:9px;justify-content:flex-start}.wa-actions .ghost{flex:1;min-width:92px}.modalfoot{position:sticky;bottom:0;background:#fff;padding-top:10px}.modalfoot .primary{flex:1}}
+@media(max-width:1150px){.layout{grid-template-columns:1fr}.side{display:none}.stats{grid-template-columns:repeat(3,1fr)}.properties-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:750px){.top{height:62px;padding:8px 12px}.nav{display:none}.brand strong{font-size:16px}.brand small{display:none}.wrap{padding:12px 7px 80px}.hero{display:block;margin-bottom:12px}.hero h1{font-size:25px}.controls{margin-top:10px;width:100%;justify-content:space-between}.month{flex:1;min-width:0}.stats{grid-template-columns:repeat(2,1fr);gap:7px}.stat{padding:10px}.stat b{font-size:19px}.calendar{grid-template-columns:repeat(7,minmax(0,1fr));width:100%;overflow:hidden}.dow{padding:7px 1px;font-size:7px}.day{min-height:124px;padding:4px 3px}.daynum{font-size:12px;margin-bottom:3px}.pill{font-size:6px;padding:2px 3px}.room{grid-template-columns:14px 14px 18px minmax(0,1fr);gap:2px;padding:2px 0}.rdot{width:14px;height:14px;font-size:7px}.check{width:14px;height:14px}.info{width:18px;height:18px;border-radius:6px;font-size:10px;padding:0}.amount{grid-column:5;gap:1px}.amount span{font-size:7px}.amount input{font-size:7px;padding:1px 0;border-bottom:1px dashed #d2d8e2}.booked-label{font-size:6px}.card{border-radius:15px}.cardhead{padding:10px 9px}.cardhead h2{font-size:13px}.legend{gap:5px;font-size:8px}.form{grid-template-columns:1fr}.field.full{grid-column:auto}.modal-bg{padding:0}.modalfoot{position:sticky;bottom:0;background:#fff;padding-top:10px}.properties-grid{grid-template-columns:1fr}.table-wrap{overflow:auto}.table{min-width:650px}.multi-bar{padding:7px 8px;font-size:9px}.multi-actions button{padding:6px 8px;font-size:9px}.multi-hint{font-size:8px}.fab{display:grid;place-items:center;position:fixed;right:15px;bottom:15px;width:54px;height:54px;border:0;border-radius:18px;background:linear-gradient(135deg,var(--blue),#20b8d9);color:#fff;font-size:24px;box-shadow:0 14px 35px #1769e855;z-index:60}}
 
-:root{
---primary:#0F4C81;
---secondary:#D4A373;
---dark:#1A1A1A;
---light:#F8F9FA;
---white:#FFFFFF;
-}
-
-body{
-font-family:'Segoe UI',sans-serif;
-background:#f8f9fa;
-color:#333;
-line-height:1.6;
-}
-
-/* Navbar */
-nav{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-background:rgba(255,255,255,.95);
-backdrop-filter:blur(10px);
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px 8%;
-box-shadow:0 2px 15px rgba(0,0,0,.08);
-z-index:1000;
-}
-
-.logo{
-font-size:24px;
-font-weight:700;
-color:var(--primary);
-}
-
-nav ul{
-display:flex;
-list-style:none;
-gap:25px;
-}
-
-nav a{
-text-decoration:none;
-color:#333;
-font-weight:600;
-transition:.3s;
-}
-
-nav a:hover{
-color:var(--primary);
-}
-
-/* Hero */
-header{
-height:100vh;
-background:
-linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-url('room1.jpg');
-background-size:cover;
-background-position:center;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-color:white;
-}
-
-.hero-content{
-background:rgba(255,255,255,.12);
-backdrop-filter:blur(12px);
-padding:50px;
-border-radius:20px;
-max-width:700px;
-}
-
-.hero-content h1{
-font-size:4rem;
-margin-bottom:10px;
-}
-
-.hero-content p{
-font-size:1.2rem;
-margin-bottom:12px;
-}
-
-.btn{
-display:inline-block;
-margin-top:15px;
-padding:15px 35px;
-background:var(--primary);
-color:white;
-text-decoration:none;
-border-radius:50px;
-font-weight:bold;
-transition:.3s;
-}
-
-.btn:hover{
-background:#093457;
-transform:translateY(-3px);
-}
-
-/* Sections */
-section{
-padding:90px 10%;
-background:white;
-}
-
-section:nth-child(even){
-background:#f5f7fa;
-}
-
-.section-title{
-text-align:center;
-font-size:2.3rem;
-color:var(--primary);
-margin-bottom:40px;
-}
-
-.about{
-max-width:850px;
-margin:auto;
-text-align:center;
-font-size:18px;
-}
-
-/* Cards */
-.features,
-.attractions,
-.reviews{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.card{
-background:white;
-padding:25px;
-border-radius:15px;
-text-align:center;
-box-shadow:0 5px 15px rgba(0,0,0,.08);
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-}
-
-.card h3{
-margin:10px 0;
-color:var(--primary);
-}
-
-/* Gallery */
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:20px;
-}
-
-.gallery img{
-width:100%;
-height:260px;
-object-fit:cover;
-border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,.1);
-}
-
-/* Contact */
-.contact{
-text-align:center;
-font-size:18px;
-}
-
-.contact p{
-margin:12px 0;
-}
-
-.contact a{
-color:var(--primary);
-text-decoration:none;
-}
-
-/* Footer */
-footer{
-background:#111;
-color:white;
-text-align:center;
-padding:25px;
-}
-
-/* WhatsApp */
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-width:65px;
-height:65px;
-background:#25D366;
-color:white;
-border-radius:50%;
-display:flex;
-justify-content:center;
-align-items:center;
-font-size:32px;
-text-decoration:none;
-box-shadow:0 5px 15px rgba(0,0,0,.3);
-z-index:999;
-}
-
-/* Mobile */
-@media(max-width:768px){
-
-nav{
-flex-direction:column;
-gap:10px;
-}
-
-nav ul{
-flex-wrap:wrap;
-justify-content:center;
-gap:15px;
-}
-
-.hero-content{
-padding:30px;
-}
-
-.hero-content h1{
-font-size:2.4rem;
-}
-
-.hero-content p{
-font-size:1rem;
-}
-
-.section-title{
-font-size:2rem;
-}
-}
+.room-pick-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:2px}.room-pick{display:flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:12px;padding:10px;background:#fbfcfe}.room-pick input{width:18px;height:18px;accent-color:var(--blue)}.room-pick b{font-size:11px}.room-pick span{display:block;color:var(--muted);font-size:9px}.room-pick.disabled{opacity:.55;background:#f5f6f8}.room-pick.disabled input{cursor:not-allowed}.room-pick.primary-room{border-color:#9bc4ff;background:#eef6ff}.booking-room-summary{margin-top:6px;font-size:10px;color:var(--muted)}
+.aadhaar-box{grid-column:1/-1;border:1px dashed #b9c8da;border-radius:15px;padding:12px;background:#f8fbff}
+.aadhaar-box label{display:block;font-weight:800;font-size:11px;margin-bottom:5px}
+.aadhaar-help{font-size:10px;color:var(--muted);margin:0 0 8px}
+.aadhaar-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.aadhaar-row input[type=file]{font-size:11px;max-width:100%}
+.aadhaar-preview{display:none;align-items:center;gap:8px;margin-top:9px}
+.aadhaar-preview.show{display:flex}
+.aadhaar-preview img{width:72px;height:52px;object-fit:cover;border-radius:9px;border:1px solid #dbe4ee}
+.aadhaar-status{font-size:10px;font-weight:700;color:#176b4d}
+.aadhaar-remove{border:0;background:#feecec;color:#a52b2b;border-radius:8px;padding:6px 8px;font-size:10px}
+.today-availability{background:linear-gradient(135deg,#071a3d,#103b7d);color:#fff;border-radius:22px;padding:17px 19px;margin-bottom:17px;box-shadow:0 18px 55px rgba(20,46,91,.14);position:relative;overflow:hidden}.today-availability:after{content:'';position:absolute;right:-35px;top:-55px;width:150px;height:150px;border-radius:50%;background:#18b7d622}.today-head{display:flex;justify-content:space-between;align-items:center;gap:12px;position:relative;z-index:1}.today-label{font-size:10px;text-transform:uppercase;letter-spacing:.13em;color:#aebfdf;font-weight:800}.today-date{font:800 21px Manrope;margin-top:3px}.today-clock{font-size:10px;color:#b9c7e0;margin-top:2px}.availability-props{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:14px;position:relative;z-index:1}.avail-prop{background:#ffffff0e;border:1px solid #ffffff18;border-radius:15px;padding:11px}.avail-prop-head{display:flex;justify-content:space-between;gap:8px;align-items:center;margin-bottom:7px}.avail-prop-head b{font-size:11px}.avail-count{font-size:9px;font-weight:800;padding:4px 7px;border-radius:20px;background:#30d38b22;color:#74e9b0}.avail-count.full{background:#f2ad2222;color:#ffd16c}.room-chips{display:flex;gap:5px;flex-wrap:wrap}.room-chip{font-size:9px;font-weight:800;padding:5px 7px;border-radius:8px;background:#30d38b;color:#073b25}.room-chip.booked{background:#e45656;color:#fff}.room-chip span{opacity:.75;margin-left:2px}.no-rooms{font-size:9px;color:#cbd6e9}@media(max-width:700px){.availability-props{grid-template-columns:1fr}.today-availability{padding:14px}.today-date{font-size:18px}}
+.avail-search{background:#fff;border:1px solid var(--line);border-radius:22px;padding:16px 18px;margin-bottom:17px;box-shadow:var(--shadow)}.avail-search-head{display:flex;justify-content:space-between;gap:12px;align-items:center}.avail-search h2{font:800 17px Manrope;margin:0}.avail-search p{margin:3px 0 0;color:var(--muted);font-size:10px}.avail-search-row{display:flex;gap:8px;margin-top:11px}.avail-date-text{flex:1;padding:12px 13px;border:1px solid #dce3ed;border-radius:12px;outline:0;background:#fbfcfe}.avail-search-btn{border:0;border-radius:12px;padding:11px 16px;background:linear-gradient(135deg,var(--blue),#2996eb);color:#fff;font-weight:800}.avail-results{margin-top:12px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.avail-result{border:1px solid var(--line);border-radius:14px;padding:11px;background:#f8fbff}.avail-result b{font-size:12px}.avail-result small{display:block;color:var(--muted);font-size:9px;margin-top:2px}.avail-room-list{display:flex;gap:5px;flex-wrap:wrap;margin-top:8px}.avail-room{padding:5px 8px;border-radius:9px;background:#e9f8f1;color:#16764f;font-size:9px;font-weight:800}.avail-empty{padding:11px;border-radius:12px;background:#fff5df;color:#8a6400;font-size:10px}.avail-range{font-size:10px;color:var(--blue);font-weight:800;margin-top:7px}@media(max-width:700px){.avail-search{padding:13px}.avail-search-row{flex-direction:column}.avail-search-btn{width:100%}.avail-results{grid-template-columns:1fr}.avail-search-head{align-items:flex-start}.avail-date-text{width:100%}}
 </style>
+<meta name="application-name" content="Restior Stays Command Center V29"><meta name="version" content="29"></head>
+<body><div id="appLock" style="display:none;position:fixed;inset:0;z-index:10000;align-items:center;justify-content:center;align-items:center;justify-content:center;background:linear-gradient(135deg,#071a3d,#123b79);padding:20px"><div style="width:min(390px,100%);background:#fff;border-radius:24px;padding:28px;box-shadow:0 25px 80px rgba(0,0,0,.28);text-align:center"><div style="width:58px;height:58px;margin:0 auto 14px;border-radius:18px;background:#071a3d;color:#fff;display:grid;place-items:center;font-size:26px">🔒</div><h2 style="margin:0 0 7px;font-family:Manrope,Arial,sans-serif">Restior Stays</h2><p style="margin:0 0 18px;color:#71809a;font-size:13px">Enter your password to access the Command Center.</p><input id="appUsername" type="text" autocomplete="username" placeholder="Username" value="admin" style="width:100%;padding:13px 14px;border:1px solid #dce3ed;border-radius:12px;outline:0;font-size:16px;text-align:center;margin-bottom:8px"><input id="appPassword" type="password" inputmode="numeric" autocomplete="current-password" placeholder="Password" style="width:100%;padding:13px 14px;border:1px solid #dce3ed;border-radius:12px;outline:0;font-size:16px;text-align:center;letter-spacing:.15em"><button id="unlockApp" type="button" style="width:100%;margin-top:10px;border:0;border-radius:12px;padding:13px;background:#1769e8;color:#fff;font-weight:800;font-size:15px">Sign in</button><div id="lockError" style="min-height:20px;margin-top:9px;color:#b23c3c;font-size:12px"></div></div></div><div class="app">
+<header class="top"><div class="brand"><div class="logo">R</div><div><strong>Restior Stays</strong><small>Booking Command Center</small></div></div><nav class="nav"><button class="active" data-view="dashboard">Overview</button><button data-view="calendarView">Calendar</button><button data-view="bookingsView">Bookings</button><button data-view="propertiesView">Properties</button></nav><div class="top-actions"><span class="sync-dot" title="Local data saved"></span><button onclick="openSettings()" title="Settings">⚙</button><button onclick="exportData()" title="Backup">↥</button></div></header>
+<main class="wrap">
+<section id="dashboard" class="view active"><div class="hero"><div><div class="eyebrow">Owner dashboard</div><h1>Run every stay from one place.</h1><p class="sub">Fast booking updates, guest details and live monthly numbers — designed for your phone.</p></div><div class="controls"><button onclick="changeMonth(-1)">‹</button><div class="month" id="monthTitle"></div><button onclick="changeMonth(1)">›</button></div></div>
+<div class="today-availability"><div class="today-head"><div><div class="today-label">Today · live availability</div><div class="today-date" id="todayDate">—</div><div class="today-clock" id="todayClock">—</div></div><div style="font-size:28px">🏠</div></div><div id="todayAvailability" class="availability-props"></div></div>
+<div class="avail-search"><div class="avail-search-head"><div><h2>🔎 Check stay availability</h2><p>Type a date or date range. The search always uses the present year automatically.</p></div><div class="avail-range" id="availabilityRange"></div></div><div class="avail-search-row"><input id="availabilityDateText" class="avail-date-text" placeholder="e.g. 10 Oct 2026 to 14 Oct 2026" onkeydown="if(event.key==='Enter')checkAvailability()"><button class="avail-search-btn" onclick="checkAvailability()">Check availability</button></div><div id="availabilityResults" class="avail-results"></div></div>
+<div class="layout"><section class="card"><div class="cardhead"><div><h2>Booking board</h2><div class="cal-select-wrap"><select id="calProp" class="select" onchange="setCalendarProperty(this.value)"></select></div></div><div class="legend"><span><i class="r1"></i>1</span><span><i class="r2"></i>2</span><span><i class="r3"></i>3</span><span><i class="r4"></i>4</span></div></div><div id="calendar" class="calendar"></div></section><aside class="card side"><h3>Your properties</h3><div id="properties"></div><div class="side-section"><h3>Quick actions</h3><button class="action" onclick="openNewBooking()">＋ Add booking</button><button class="action alt" onclick="goView('bookingsView')">View all bookings</button><button class="action alt" onclick="exportData()">Export backup</button></div><div class="side-section"><h3>Recent</h3><div id="recent" class="recent"></div></div></aside></div></section><div class="stats"><div class="stat"><small>Bookings</small><b id="statBookings">0</b><span class="trend">this month</span></div><div class="stat"><small>Revenue</small><b id="statRevenue">₹0</b><span class="trend">booked amount</span></div><div class="stat"><small>Occupancy</small><b id="statOcc">0%</b><span class="trend">room-nights</span></div><div class="stat"><small>Pending</small><b id="statPending">₹0</b><span class="trend">payment balance</span></div><div class="stat"><small>Properties</small><b id="statProps">0</b><span class="trend">active stays</span></div></div>
+<section id="calendarView" class="view"><div class="hero"><div><div class="eyebrow">Calendar</div><h1>Monthly availability</h1><p class="sub">Tap the small <b>i</b> button beside a room to view or edit the reservation.</p></div><div class="controls"><button onclick="changeMonth(-1)">‹</button><div class="month" id="monthTitle2"></div><button onclick="changeMonth(1)">›</button></div></div><div class="card"><div class="cardhead"><div><h2>Monthly availability</h2><div class="cal-select-wrap"><select id="calProp2" class="select" onchange="setCalendarProperty(this.value)"></select></div></div><div class="month"></div></div><div id="calendar2" class="calendar"></div></div></section>
+<section id="bookingsView" class="view"><div class="hero"><div><div class="eyebrow">Reservations</div><h1>Every booking, searchable.</h1><p class="sub">Edit guest details, amount, payment status and notes on the go.</p></div><button class="primary" onclick="openNewBooking()">＋ New booking</button></div><div class="toolbar"><input id="search" class="search" placeholder="Search guest, phone or property…" oninput="renderBookings()"><select id="statusFilter" class="select" onchange="renderBookings()"><option value="all">All statuses</option><option value="paid">Paid</option><option value="pending">Pending</option><option value="cancelled">Cancelled</option></select></div><div class="card table-wrap"><table class="table"><thead><tr><th>Stay</th><th>Guest</th><th>Property</th><th>Guests</th><th>Amount</th><th>Payment</th><th>Source</th><th></th></tr></thead><tbody id="bookingRows"></tbody></table></div></section>
+<section id="propertiesView" class="view"><div class="hero"><div><div class="eyebrow">Portfolio</div><h1>Your stays.</h1><p class="sub">Manage properties and room labels from one dashboard.</p></div><button class="primary" onclick="addProperty()">＋ Add property</button></div><div id="propertyGrid" class="properties-grid"></div></section>
+</main><button class="fab" onclick="openNewBooking()">＋</button></div>
+<div id="modalBg" class="modal-bg"><div class="modal"><div class="modalhead"><div><div id="modalEyebrow" class="eyebrow">Reservation</div><h2 id="modalTitle">New booking</h2></div><button class="close" onclick="closeModal()">×</button></div><div class="form"><div class="field"><label>Selected stay night(s)</label><input id="fDate" type="date"><div id="selectedDatesSummary" class="multi-hint" style="margin-top:5px">Long-press dates on the calendar to select multiple nights.</div><div id="stayDateNote" class="stay-date-note">Select the nights the guest will occupy. Check-out is the day after the last selected night.</div></div><div class="field"><label>Primary room</label><select id="fRoom"></select><div class="stay-date-note">You can add more rooms below if the same guest books 2 or 3 rooms together.</div></div><div class="field full"><label>Rooms in this booking</label><div id="bookingRooms" class="room-pick-grid"></div><div id="bookingRoomSummary" class="booking-room-summary"></div></div><div class="field"><label>Guest name</label><input id="fGuest" placeholder="Full name"></div><div class="field"><label>Phone / WhatsApp</label><input id="fPhone" placeholder="10 digit number"></div><div class="field"><label>Check-in date</label><input id="fCheckinDate" type="date"></div><div class="field"><label>Check-out date</label><input id="fCheckoutDate" type="date"></div><div class="field"><label>Check-in time — from 11:00 AM</label><input id="fCheckin" type="time" value="11:00" min="11:00"></div><div class="field"><label>Check-out time — by 10:00 AM</label><input id="fCheckout" type="time" value="10:00" max="10:00"></div><div class="hint" style="grid-column:1/-1;margin-top:-6px;margin-bottom:8px">Stay policy: Check-in from 11:00 AM · Check-out by 10:00 AM. Changing the dates below updates the selected stay nights automatically.</div><div class="field"><label>Guests</label><input id="fGuests" type="number" min="1" value="2"></div><div class="field"><label>Total amount ₹</label><input id="fAmount" type="number" min="0" placeholder="0"></div><div class="field"><label>Payment status</label><select id="fPayment"><option value="pending">Pending</option><option value="paid">Paid</option><option value="cancelled">Cancelled</option></select></div><div class="field"><label>Paid by</label><select id="fPaymentMethod"><option value="">Not specified</option><option value="cash">Cash</option><option value="upi">UPI</option></select></div><div class="field"><label>Advance ₹</label><input id="fAdvance" type="number" min="0" placeholder="0"></div><div class="field"><label>Booking source</label><select id="fSource"><option value="direct">Direct</option><option value="makemytrip">MakeMyTrip</option><option value="agoda">Agoda</option><option value="goibibo">Goibibo</option><option value="booking.com">Booking.com</option><option value="airbnb">Airbnb</option></select></div><div class="aadhaar-box"><label>🪪 Aadhaar card photo</label><p class="aadhaar-help">Add a clear photo of the guest’s Aadhaar card for your records. You can take a new photo or choose one from your gallery.</p><div class="aadhaar-row"><input id="fAadhaar" type="file" accept="image/*" capture="environment" style="display:none"><input id="fAadhaarGallery" type="file" accept="image/*" style="display:none"><button type="button" class="aadhaar-pick" onclick="document.getElementById('fAadhaar').click()">📷 Take photo</button><button type="button" class="aadhaar-pick" onclick="document.getElementById('fAadhaarGallery').click()">🖼️ Gallery</button><button type="button" class="aadhaar-remove" id="removeAadhaar">Remove</button></div><div id="aadhaarPreview" class="aadhaar-preview"><img id="aadhaarImg" alt="Aadhaar preview"><span id="aadhaarStatus" class="aadhaar-status">Photo attached</span></div></div><div class="field full"><label>Notes</label><textarea id="fNotes" placeholder="Special requests, ID, cleaning, payment details…"></textarea></div></div><div class="wa-tools"><div><b>Guest WhatsApp + check-in video</b><span>Save the booking, then share the confirmation message with the check-in video. On Android, WhatsApp is selected from the share sheet when video attachment is supported.</span></div><div class="wa-actions"><button class="ghost whatsapp" onclick="sendWhatsApp('confirmation')">✓ Confirmation</button><button class="ghost whatsapp" onclick="sendWhatsApp('thankyou')">♥ Thank you</button><button class="ghost whatsapp" onclick="sendWhatsApp('checkin')">⌂ Check-in</button><button class="ghost whatsapp" onclick="sendWhatsAppWithVideo('all')">🎥 Send message + video</button></div></div><div class="modalfoot"><button id="deleteBtn" class="danger" onclick="deleteBooking()">Delete</button><button id="saveBookingBtn" type="button" class="primary">Save booking & Send WhatsApp</button></div></div></div>
+<div id="settingsBg" class="modal-bg"><div class="modal"><div class="modalhead"><div><div class="eyebrow">Settings</div><h2>Local settings</h2></div><button class="close" onclick="closeSettings()">×</button></div><p class="sub">This version stores bookings on this device only. No cloud service is used.</p><div class="side-section"><b>🔒 App password</b><p class="sub">The Command Center is protected by the app password.</p><button class="danger" style="width:100%;margin-top:8px" onclick="lockApp()">Lock app now</button></div><div class="side-section"><b>💾 Backup</b><p class="sub">Use the backup button in the top bar to export your bookings.</p></div></div></div>
+<div id="toast" class="toast"></div>
+<script>
+(function(){
+  // Local-only authentication: no Supabase, no cloud login.
+  const LOCK_KEY='restiorLocalAuth';
+  const USER_HASH='8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918';
+  const PASSWORD_HASH='14ff3085b7743c634d15e37418ceafcee1cd9ad00c4efb44c54c3a856482caa7';
+  async function sha256(v){const b=new TextEncoder().encode(v);const h=await crypto.subtle.digest('SHA-256',b);return Array.from(new Uint8Array(h)).map(x=>x.toString(16).padStart(2,'0')).join('')}
+  function showLock(){const e=document.getElementById('appLock');if(e)e.style.display='flex';}
+  function hideLock(){const e=document.getElementById('appLock');if(e)e.style.display='none';}
+  async function unlock(){const u=document.getElementById('appUsername'),p=document.getElementById('appPassword'),err=document.getElementById('lockError');const ok=(await sha256((u.value||'').trim().toLowerCase())===USER_HASH)&&(await sha256(p.value)===PASSWORD_HASH);if(ok){sessionStorage.setItem(LOCK_KEY,'1');u.value='admin';p.value='';if(err)err.textContent='';hideLock()}else{if(err)err.textContent='Incorrect username or password';p.value='';p.focus()}}
+  window.lockApp=function(){sessionStorage.removeItem(LOCK_KEY);closeSettings();showLock();setTimeout(()=>document.getElementById('appPassword')?.focus(),50)};
+  document.addEventListener('DOMContentLoaded',()=>{const unlocked=sessionStorage.getItem(LOCK_KEY)==='1';if(!unlocked)showLock();document.getElementById('unlockApp')?.addEventListener('click',unlock);['appUsername','appPassword'].forEach(id=>document.getElementById(id)?.addEventListener('keydown',e=>{if(e.key==='Enter')unlock()}));});
+})();
+const DEFAULT_PROPS=[{id:'p1',name:'Restior Stays',location:'Katapadi',rooms:4},{id:'p2',name:'Avenmore Homestay',location:'Bantakal',rooms:1}];
+let props=JSON.parse(localStorage.getItem('restiorProps')||'null')||DEFAULT_PROPS;let pendingAadhaarPhoto='';let bookingVideoFile=null;
+// Avenmore has one room. Migrate older saved versions that incorrectly had four.
+const avenmore=props.find(p=>String(p.name||'').toLowerCase().includes('avenmore') || p.id==='p2');
+if(avenmore) avenmore.rooms=1;let bookings=JSON.parse(localStorage.getItem('restiorBookingsV2')||'{}');const CURRENT_YEAR=new Date().getFullYear();let cursor=new Date(CURRENT_YEAR,new Date().getMonth(),1);let editingKey=null;let activePropId=localStorage.getItem('restiorActiveProp')||props[0]?.id||'p1';let selectedDates=[];let multiSelectMode=false;let longPressTimer=null;let longPressTriggered=false;
+const $=id=>document.getElementById(id), pad=n=>String(n).padStart(2,'0');function iso(y,m,d){return `${y}-${pad(m+1)}-${pad(d)}`}function key(date,room){return `${date}_${room}`}function money(n){return '₹'+Number(n||0).toLocaleString('en-IN')}function sourceLabel(s){return ({direct:'Direct',makemytrip:'MakeMyTrip',agoda:'Agoda',goibibo:'Goibibo','booking.com':'Booking.com',airbnb:'Airbnb'})[s]||'Direct'}function fmtDate(s){return new Date(s+'T00:00:00').toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'})}
+let cloudReady=false;
+function saveLocal(){localStorage.setItem('restiorBookingsV2',JSON.stringify(bookings));localStorage.setItem('restiorProps',JSON.stringify(props))}
+function store(){saveLocal();renderAll()}
+function scheduleCloudSync(){}
+async function syncFromCloud(){return false}
+async function syncToCloud(){return false}
+async function cloudDeleteBooking(){return false}
+function subscribeRealtime(){}
+function setCloudStatus(){const dot=document.querySelector('.sync-dot');if(dot){dot.style.background='#30d38b';dot.title='Local data saved'}}
+function rooms(propId=null){let list=propId?props.filter(p=>p.id===propId):props;let out=[];list.forEach(p=>{for(let r=1;r<=p.rooms;r++)out.push({id:p.id+'_'+r,prop:p,room:r,ac:r===1||r===2})});return out}
+function roomObj(id){return rooms().find(x=>x.id===String(id))||rooms()[0]}
+function renderTodayAvailability(){const now=new Date(),date=iso(now.getFullYear(),now.getMonth(),now.getDate());const dateEl=$('todayDate'),clockEl=$('todayClock'),wrap=$('todayAvailability');if(dateEl)dateEl.textContent=now.toLocaleDateString('en-IN',{weekday:'long',day:'numeric',month:'long',year:'numeric'});if(clockEl)clockEl.textContent='Current date · '+date;if(!wrap)return;wrap.innerHTML=props.map(p=>{let rs=[];for(let r=1;r<=p.rooms;r++){let rid=p.id+'_'+r,b=bookings[key(date,rid)];rs.push({r,b})}let available=rs.filter(x=>!(x.b&&x.b.booked)),booked=rs.filter(x=>x.b&&x.b.booked);return `<div class="avail-prop"><div class="avail-prop-head"><b>${escapeHtml(p.name)}</b><span class="avail-count ${available.length?'':'full'}">${available.length} available · ${booked.length} booked</span></div><div class="room-chips">${rs.map(x=>`<span class="room-chip ${x.b&&x.b.booked?'booked':''}">Room ${x.r}${x.r<=2?' · AC':' · NON-AC'}${x.b&&x.b.booked?` <span>· ${escapeHtml(x.b.guest||'Booked')}</span>`:''}</span>`).join('')}</div></div>`}).join('')||'<div class="no-rooms">No properties added.</div>'}
+function parseAvailabilityDates(text){text=String(text||'').trim();if(!text)return null;const presentYear=new Date().getFullYear();let t=text.replace(/[–—]/g,'-').replace(/\s+to\s+/i,' - ');let parts=t.split(/\s+-\s+|\s*\-\s*/).map(x=>x.trim()).filter(Boolean);const parseOne=x=>{let m=x.match(/^(\d{1,2})\s+([A-Za-z]{3,9})(?:\s+\d{2,4})?$/);if(m){let monthNames=['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'];let mon=monthNames.indexOf(m[2].slice(0,3).toLowerCase());let day=+m[1];if(mon>=0){let d=new Date(presentYear,mon,day);if(d.getMonth()===mon&&d.getDate()===day)return iso(presentYear,mon,day)}}m=x.match(/^(\d{1,2})[\/.-](\d{1,2})(?:[\/.-](\d{2,4}))?$/);if(m){let day=+m[1],mon=+m[2]-1,yr=presentYear;if(mon>=0&&mon<12){let d2=new Date(yr,mon,day);if(d2.getMonth()===mon&&d2.getDate()===day)return iso(yr,mon,day)}}let d=new Date(x);if(!isNaN(d)){let mon=d.getMonth(),day=d.getDate(),d3=new Date(presentYear,mon,day);if(d3.getMonth()===mon&&d3.getDate()===day)return iso(presentYear,mon,day)}return null};let a=parseOne(parts[0]);if(!a)return null;let b=parts[1]?parseOne(parts[1]):a;if(!b)return null;if(b<a)[a,b]=[b,a];let out=[],cur=new Date(a+'T00:00:00'),end=new Date(b+'T00:00:00');while(cur<=end){out.push(iso(cur.getFullYear(),cur.getMonth(),cur.getDate()));cur.setDate(cur.getDate()+1)}return out}
+function checkAvailability(){let dates=parseAvailabilityDates($('availabilityDateText')?.value);let wrap=$('availabilityResults'),label=$('availabilityRange');if(!dates){if(wrap)wrap.innerHTML='<div class="avail-empty">Please enter a valid date, for example <b>10 Oct 2026</b>, or a range such as <b>10 Oct 2026 to 14 Oct 2026</b>.</div>';if(label)label.textContent='';return}if(label)label.textContent=dates.length===1?fmtDate(dates[0]):`${fmtDate(dates[0])} → ${fmtDate(dates[dates.length-1])}`;let groups=props.map(p=>{let available=[];for(let r=1;r<=p.rooms;r++){let rid=p.id+'_'+r,free=dates.every(dt=>!(bookings[key(dt,rid)]&&bookings[key(dt,rid)].booked));if(free)available.push(r)}return {p,available}}).filter(x=>x.available.length);if(!groups.length){wrap.innerHTML='<div class="avail-empty">No rooms are available for the selected dates.</div>';return}wrap.innerHTML=groups.map(x=>`<div class="avail-result"><b>${escapeHtml(x.p.name)}</b><small>${escapeHtml(x.p.location)} · ${x.available.length} room${x.available.length===1?'':'s'} available for the full stay</small><div class="avail-room-list">${x.available.map(r=>`<span class="avail-room">Room ${r}${r<=2?' · AC':' · NON-AC'} · Available</span>`).join('')}</div></div>`).join('')}
+function updateYearUI(){const y=new Date().getFullYear();const el=$('availabilityDateText');if(el)el.placeholder=`e.g. 10 Oct ${y} or 10 Oct ${y} to 14 Oct ${y}`;const yels=document.querySelectorAll('[data-current-year]');yels.forEach(e=>e.textContent=y)}
+function renderAll(){updateYearUI();renderTodayAvailability();renderCalendar('calendar');renderCalendar('calendar2');renderPropertySelectors();renderProps();renderStats();renderBookings();renderRecent();renderPropertyGrid()}
+function renderPropertySelectors(){['calProp','calProp2'].forEach(id=>{let el=$(id);if(!el)return;el.innerHTML=props.map(p=>`<option value="${p.id}" ${p.id===activePropId?'selected':''}>${escapeHtml(p.name)} · ${p.rooms} rooms</option>`).join('')})}
+function setCalendarProperty(id){if(!props.some(p=>p.id===id))return;activePropId=id;localStorage.setItem('restiorActiveProp',id);renderAll();toast('Showing '+(props.find(p=>p.id===id)?.name||'property'))}
+function renderCalendar(target){const y=cursor.getFullYear(),m=cursor.getMonth();const el=$(target);if(!el)return;el.innerHTML='';
+['MON','TUE','WED','THU','FRI','SAT','SUN'].forEach(x=>{let d=document.createElement('div');d.className='dow';d.textContent=x;el.appendChild(d)});
+const bar=document.createElement('div');bar.className='multi-bar';bar.style.gridColumn='1/-1';bar.innerHTML=`<div>${multiSelectMode?`<b>${selectedDates.length} date${selectedDates.length===1?'':'s'} selected</b>`:'<b>Multi-date booking</b>'} <span class="multi-hint">${multiSelectMode?'Tap dates to add/remove them, then Done':'Tap Select dates or long-press a date'}</span></div><div class="multi-actions">${multiSelectMode?'<button class="multi-clear" onclick="clearDateSelection()">Clear</button><button class="multi-done" onclick="finishDateSelection()">Done</button>':'<button class="multi-done" onclick="startDateSelection()">Select dates</button>'}</div>`;el.appendChild(bar);
+let first=(new Date(y,m,1).getDay()+6)%7,days=new Date(y,m+1,0).getDate();for(let i=0;i<first;i++){let d=document.createElement('div');d.className='day muted';el.appendChild(d)}
+for(let day=1;day<=days;day++){let date=iso(y,m,day), now=new Date(),today=date===iso(now.getFullYear(),now.getMonth(),now.getDate());let d=document.createElement('div');d.className='day'+(today?' today':'')+(selectedDates.includes(date)?' multi-selected':'');d.innerHTML=`<div class="daynum"><span>${day}</span>${today?'<span class="pill">TODAY</span>':''}</div>`;
+rooms(activePropId).forEach((rr,i)=>{let k=key(date,rr.id),b=bookings[k]||{},row=document.createElement('div');row.className='room';row.innerHTML=`<span class="rdot r${(rr.room-1)%4+1}">${rr.room}</span><span class="ac-badge">${rr.ac?'AC':'NON-AC'}</span><input class="check" type="checkbox" ${b.booked?'checked':''} onchange="calendarRoomToggle('${date}','${rr.id}',this.checked)"><button class="info" onclick="openBooking('${date}','${rr.id}')">i</button><div class="amount"><span>₹</span><input value="${b.amount||''}" placeholder="amount" onchange="quickAmount('${date}','${rr.id}',this.value)"></div>${b.booked?`<div class="booked-label" style="grid-column:3/6">${escapeHtml(b.guest||'Booked')} · ${b.payment==='paid'?'PAID':b.payment==='cancelled'?'CANCELLED':'PENDING'}${b.paymentMethod?' · '+escapeHtml(b.paymentMethod.toUpperCase()):''} · ${escapeHtml(sourceLabel(b.source))}</div>`:''}`;row.querySelectorAll('input,button').forEach(x=>x.addEventListener('click',e=>e.stopPropagation()));d.appendChild(row)});
+const selectDate=()=>{if(!multiSelectMode)return;const idx=selectedDates.indexOf(date);if(idx>=0)selectedDates.splice(idx,1);else selectedDates.push(date);selectedDates.sort();renderAll();updateSelectedDatesSummary()};
+d.addEventListener('click',e=>{if(longPressTriggered){longPressTriggered=false;return}if(multiSelectMode){selectDate();return}if(e.target.closest('.room'))return;selectedDates=[date];multiSelectMode=true;renderAll();updateSelectedDatesSummary();toast('Date selected — tap more dates, then Done')});
+d.addEventListener('contextmenu',e=>{e.preventDefault()});
+d.addEventListener('pointerdown',e=>{if(e.target.closest('.room'))return;longPressTriggered=false;clearTimeout(longPressTimer);longPressTimer=setTimeout(()=>{longPressTriggered=true;multiSelectMode=true;if(!selectedDates.includes(date))selectedDates.push(date);selectedDates.sort();renderAll();updateSelectedDatesSummary();toast('Date selected — tap more dates, then Done')},550)});['pointerup','pointercancel','pointerleave'].forEach(ev=>d.addEventListener(ev,()=>clearTimeout(longPressTimer)));
+el.appendChild(d)}
+if($('monthTitle'))$('monthTitle').textContent=new Intl.DateTimeFormat('en',{month:'long',year:'numeric'}).format(cursor);if($('monthTitle2'))$('monthTitle2').textContent=$('monthTitle').textContent}
+function startDateSelection(){selectedDates=[];multiSelectMode=true;renderAll();updateSelectedDatesSummary();toast('Select all nights for this booking, then tap Done')}
+function clearDateSelection(){selectedDates=[];multiSelectMode=true;renderAll();updateSelectedDatesSummary();toast('Date selection cleared')}
+function finishDateSelection(){if(!selectedDates.length){toast('Select at least one date');return}multiSelectMode=false;let first=selectedDates[0];openBooking(first,rooms(activePropId)[0]?.id,true);syncFormDatesFromSelection()}
+function nextDate(date){if(!date)return '';let d=new Date(date+'T00:00:00');d.setDate(d.getDate()+1);return iso(d.getFullYear(),d.getMonth(),d.getDate())}
+function rangeDates(start,end){if(!start||!end)return [];let a=new Date(start+'T00:00:00'),b=new Date(end+'T00:00:00');if(isNaN(a)||isNaN(b)||b<=a)return [];let out=[];while(a<b){out.push(iso(a.getFullYear(),a.getMonth(),a.getDate()));a.setDate(a.getDate()+1)}return out}
+function syncFormDatesFromSelection(){let dates=(selectedDates||[]).filter(Boolean).slice().sort();if(!dates.length)return;if($('fCheckinDate'))$('fCheckinDate').value=dates[0];if($('fCheckoutDate'))$('fCheckoutDate').value=nextDate(dates[dates.length-1]);if($('fDate'))$('fDate').value=dates[0];updateSelectedDatesSummary()}
+function syncSelectionFromFormDates(){let a=$('fCheckinDate')?.value,b=$('fCheckoutDate')?.value;if(!a||!b)return;let dates=rangeDates(a,b);if(!dates.length){toast('Checkout date must be after check-in date');return}selectedDates=dates;multiSelectMode=false;$('fDate').value=a;renderAll();updateSelectedDatesSummary()}
+function updateSelectedDatesSummary(){let el=$('selectedDatesSummary');if(!el)return;el.textContent=selectedDates.length?`${selectedDates.length} night${selectedDates.length===1?'':'s'} selected: ${selectedDates.map(fmtDate).join(', ')}`:'Long-press dates on the calendar to select multiple nights.';if($('stayDateNote'))$('stayDateNote').textContent=selectedDates.length?`Check-in date: ${fmtDate(selectedDates[0])} · Check-out date: ${fmtDate(nextDate(selectedDates[selectedDates.length-1]))} · ${selectedDates.length} night${selectedDates.length===1?'':'s'}`:'Select the nights the guest will occupy. Check-out is the day after the last selected night.'}
 
-</head>
+function escapeHtml(s){return String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function calendarRoomToggle(date,rid,checked){
+  if(!checked){
+    openBooking(date,rid);
+    return;
+  }
+  // Start a new booking from this calendar date. Nothing is saved until the user taps Save.
+  selectedDates=[date];
+  multiSelectMode=false;
+  openBooking(date,rid);
+}
+function toggleBooking(date,rid,checked){let k=key(date,rid);if(!checked){if(!confirm('Remove this booking?\n\nFirst confirmation: this will unbook the room for this date.')){renderAll();return}if(!confirm('Are you absolutely sure?\n\nSecond confirmation: the booking details for this date will be removed from this device.')){renderAll();return}delete bookings[k];saveLocal();renderAll();cloudDeleteBooking(rid,[date]);toast('Booking removed');return}bookings[k]=bookings[k]||{};bookings[k].booked=true;bookings[k].updated=new Date().toISOString();bookings[k].payment=bookings[k].payment||'pending';store();celebrate();toast('Room marked booked — add booking details');setTimeout(()=>openBooking(date,rid),120)}
+function quickAmount(date,rid,v){let k=key(date,rid);bookings[k]=bookings[k]||{};bookings[k].amount=Number(v||0);bookings[k].booked=true;bookings[k].updated=new Date().toISOString();store()}
+function renderStats(){let y=cursor.getFullYear(),m=cursor.getMonth(),prefix=`${y}-${pad(m+1)}`,all=Object.entries(bookings).filter(([k,b])=>k.startsWith(prefix)&&b.booked);let revenue=all.reduce((s,[k,b])=>s+Number(b.amount||0),0),advance=all.reduce((s,[k,b])=>s+Number(b.advance||0),0),roomsTotal=new Date(y,m+1,0).getDate()*Math.max(rooms().length,1);$('statBookings').textContent=all.length;$('statRevenue').textContent=money(revenue);$('statOcc').textContent=Math.round(all.length/roomsTotal*100)+'%';$('statPending').textContent=money(Math.max(revenue-advance,0));$('statProps').textContent=props.length}
+function renderProps(){$('properties').innerHTML=props.map((p,i)=>`<div class="prop"><div class="mini r${i%4+1}">${i+1}</div><div><b>${escapeHtml(p.name)}</b><span>${escapeHtml(p.location)} · ${p.rooms} rooms</span></div></div>`).join('')}
+function renderRecent(){let a=Object.entries(bookings).filter(([k,b])=>b.booked).sort((x,y)=>(y[1].updated||'').localeCompare(x[1].updated||'')).slice(0,6);$('recent').innerHTML=a.length?a.map(([k,b])=>{let [date,rid]=k.split('_');let rr=roomObj(rid);return `<div class="recent-item" onclick="openBooking('${date}','${rid}')"><b>${escapeHtml(b.guest||'Guest')} · Room ${rr.room}</b><span>${fmtDate(date)} · ${money(b.amount)} · ${escapeHtml(rr.prop.name)}</span></div>`}).join(''):'<div class="sub">No bookings yet.</div>'}
+function renderBookings(){let q=($('search')?.value||'').toLowerCase(),f=$('statusFilter')?.value||'all';let a=Object.entries(bookings).filter(([k,b])=>b.booked).map(([k,b])=>{let [date,...rp]=k.split('_'),rid=rp.join('_'),rr=roomObj(rid);return{k,date,rid,b,rr}}).filter(x=>{let text=`${x.b.guest||''} ${x.b.phone||''} ${x.rr.prop.name} ${x.rr.prop.location}`.toLowerCase();return(!q||text.includes(q))&&(f==='all'||x.b.payment===f)}).sort((a,b)=>b.date.localeCompare(a.date));let rows=$('bookingRows');if(!rows)return;rows.innerHTML=a.length?a.map(x=>`<tr><td><b>${fmtDate(x.b.checkinDate||x.date)} → ${fmtDate(x.b.checkoutDate||nextDate(x.date))}</b><br><span style="color:var(--muted)">${x.b.stayDates?.length||1} night${(x.b.stayDates?.length||1)===1?'':'s'}</span></td><td><b>${escapeHtml(x.b.guest||'Guest')}</b><br><span style="color:var(--muted)">${escapeHtml(x.b.phone||'')}</span></td><td>${escapeHtml(x.rr.prop.name)}<br><span style="color:var(--muted)">Room ${x.rr.room}</span></td><td>${x.b.guests||1}</td><td>${money(x.b.amount)}</td><td><span class="badge ${x.b.payment==='paid'?'paid':x.b.payment==='cancelled'?'cancel':'pending'}">${String(x.b.payment||'pending').toUpperCase()}${x.b.paymentMethod?' · '+escapeHtml(x.b.paymentMethod.toUpperCase()):''}</span></td><td>${escapeHtml(sourceLabel(x.b.source))}</td><td><button class="ghost" onclick="openBooking('${x.date}','${x.rid}')">Edit</button></td></tr>`).join(''):'<tr><td colspan="8" class="sub">No matching bookings.</td></tr>'}
+function renderPropertyGrid(){$('propertyGrid').innerHTML=props.map((p,i)=>`<div class="card property-card"><div class="big">${i+1}</div><h3>${escapeHtml(p.name)}</h3><p>${escapeHtml(p.location)} · ${p.rooms} rooms</p><button class="action alt" onclick="editProperty('${p.id}')">Edit property</button></div>`).join('')}
+function changeMonth(n){cursor=new Date(cursor.getFullYear(),cursor.getMonth()+n,1);renderAll()}
+function bookingRoomIds(){
+  const primary=$('fRoom')?.value;
+  const checked=[...document.querySelectorAll('#bookingRooms input[data-room-id]:checked')].map(x=>x.dataset.roomId);
+  const ids=checked.filter(Boolean);
+  if(primary && !ids.includes(primary)) ids.unshift(primary);
+  return [...new Set(ids)];
+}
+function renderBookingRooms(selectedIds){
+  const wrap=$('bookingRooms'); if(!wrap)return;
+  const primary=$('fRoom')?.value;
+  const ids=new Set(selectedIds||[]);
+  wrap.innerHTML=rooms(activePropId).map(r=>{
+    const booked=roomHasConflictForForm(r.id);
+    const checked=ids.has(r.id)||r.id===primary;
+    return `<label class="room-pick ${r.id===primary?'primary-room':''} ${booked&&!checked?'disabled':''}"><input type="checkbox" data-room-id="${r.id}" ${checked?'checked':''} ${booked&&!checked?'disabled':''}><div><b>Room ${r.room} · ${r.ac?'AC':'NON-AC'}</b><span>${booked&&!checked?'Booked for selected dates':'Available for this booking'}</span></div></label>`;
+  }).join('');
+  wrap.querySelectorAll('input[data-room-id]').forEach(cb=>cb.addEventListener('change',()=>{
+    if(cb.dataset.roomId===primary && !cb.checked){cb.checked=true;toast('Primary room cannot be removed; choose another primary room first.');return}
+    updateBookingRoomSummary();
+  }));
+  updateBookingRoomSummary();
+}
+function updateBookingRoomSummary(){const el=$('bookingRoomSummary');if(!el)return;const ids=bookingRoomIds();el.textContent=`${ids.length} room${ids.length===1?'':'s'} selected: ${ids.map(id=>{let r=roomObj(id);return r?`Room ${r.room}`:'Room'}).join(', ')}`}
+function roomHasConflictForForm(rid){
+  const a=$('fCheckinDate')?.value,b=$('fCheckoutDate')?.value;if(!a||!b)return false;
+  const dates=rangeDates(a,b),oldGroup=(editingKey&&bookings[editingKey]?.bookingId)||null;
+  return dates.some(d=>{const x=bookings[key(d,rid)];return x?.booked && (!oldGroup || x.bookingId!==oldGroup)});
+}
+function fillRooms(selected){$('fRoom').innerHTML=rooms().map((r,i)=>`<option value="${r.id}" ${String(selected)===String(r.id)?'selected':''}>${escapeHtml(r.prop.name)} — Room ${r.room} · ${r.ac?'AC':'NON-AC'}</option>`).join('')}
+function resetAadhaarPreview(){pendingAadhaarPhoto='';const p=$('aadhaarPreview');if(p)p.classList.remove('show');if($('aadhaarImg'))$('aadhaarImg').src='';if($('fAadhaar'))$('fAadhaar').value='';if($('fAadhaarGallery'))$('fAadhaarGallery').value=''}
+function setAadhaarPreview(data){pendingAadhaarPhoto=data||'';const p=$('aadhaarPreview');if(data&&p){$('aadhaarImg').src=data;p.classList.add('show')}else resetAadhaarPreview()}
+function resetForm(){updateSelectedDatesSummary();['fGuest','fPhone','fNotes','fAmount','fAdvance'].forEach(id=>$(id).value='');$('fGuests').value=2;$('fCheckin').value='11:00';$('fCheckout').value='10:00';$('fPayment').value='pending';$('fPaymentMethod').value='';$('fSource').value='direct';resetAadhaarPreview();syncFormDatesFromSelection()}
+function openNewBooking(){selectedDates=[];multiSelectMode=false;editingKey=null;$('modalTitle').textContent='New booking';$('modalEyebrow').textContent='Quick reservation';$('deleteBtn').style.display='none';fillRooms(rooms(activePropId)[0]?.id);resetForm();let d=iso(cursor.getFullYear(),cursor.getMonth(),Math.min(new Date().getDate(),new Date(cursor.getFullYear(),cursor.getMonth()+1,0).getDate()));selectedDates=[d];$('fDate').value=d;syncFormDatesFromSelection();renderBookingRooms([rooms(activePropId)[0]?.id]);$('modalBg').classList.add('open')}
+function openBooking(date,rid,fromMulti=false){
+  const existing=bookings[key(date,rid)]||{};
+  if(!fromMulti)selectedDates=Array.isArray(existing.stayDates)&&existing.stayDates.length?existing.stayDates.slice().sort():[date];
+  multiSelectMode=false;editingKey=key(date,rid);
+  const b=existing,rr=roomObj(rid);
+  $('modalTitle').textContent=`Room ${rr.room} · ${fmtDate(date)}`;$('modalEyebrow').textContent=b.booked?'Booked reservation':'Booking details';$('deleteBtn').style.display=b.booked?'block':'none';
+  fillRooms(rid);$('fDate').value=date;$('fGuest').value=b.guest||'';$('fPhone').value=b.phone||'';$('fCheckin').value=b.checkin||'11:00';$('fCheckout').value=b.checkout||'10:00';$('fCheckinDate').value=b.checkinDate||selectedDates[0]||date;$('fCheckoutDate').value=b.checkoutDate||nextDate(selectedDates[selectedDates.length-1]||date);$('fGuests').value=b.guests||2;$('fAmount').value=b.stayTotal||b.amount||'';$('fPayment').value=b.payment||'pending';$('fPaymentMethod').value=b.paymentMethod||'';$('fAdvance').value=b.advance||'';$('fSource').value=b.source||'direct';$('fNotes').value=b.notes||'';
+  resetAadhaarPreview();if(b.aadhaarPhoto)setAadhaarPreview(b.aadhaarPhoto);
+  let groupIds=b.bookingId?[...new Set(Object.values(bookings).filter(x=>x?.booked&&x.bookingId===b.bookingId).map(x=>x.roomId).filter(Boolean))]:[rid];
+  if(!groupIds.includes(rid))groupIds.unshift(rid);
+  renderBookingRooms(groupIds);updateSelectedDatesSummary();$('modalBg').classList.add('open');
+}
+function closeModal(){$('modalBg').classList.remove('open')}
+function currentBookingDraft(){
+  let rid=$('fRoom').value,rr=roomObj(rid);
+  let checkinDate=$('fCheckinDate').value,checkoutDate=$('fCheckoutDate').value;
+  let dates=(checkinDate&&checkoutDate&&checkoutDate>checkinDate)?rangeDates(checkinDate,checkoutDate):[];
+  let roomIds=bookingRoomIds();
+  return {guest:$('fGuest').value.trim()||'Guest',phone:$('fPhone').value.trim(),date:checkinDate,dates,checkinDate,checkoutDate,room:rr?rr.room:'',roomIds,rooms:roomIds.map(id=>{let r=roomObj(id);return r?`Room ${r.room}`:'Room'}),property:rr?rr.prop.name:'Restior Stays',location:rr?rr.prop.location:'',checkin:$('fCheckin').value||'11:00',checkout:$('fCheckout').value||'10:00',guests:Number($('fGuests').value||1),amount:Number($('fAmount').value||0),advance:Number($('fAdvance').value||0),payment:$('fPayment').value,paymentMethod:$('fPaymentMethod').value,source:$('fSource').value,notes:$('fNotes').value.trim()};
+}
 
-<body>
+function waNumber(phone){let n=String(phone||'').replace(/\D/g,'');if(n.length===10)n='91'+n;return n}
+function openWaMessage(msg){let n=waNumber($('fPhone').value);if(n.length<12){toast('Add a valid WhatsApp number first');return false}let url=`https://wa.me/${n}?text=${encodeURIComponent(msg)}`;let a=document.createElement('a');a.href=url;a.target='_blank';a.rel='noopener';a.style.display='none';document.body.appendChild(a);a.click();a.remove();return true}
+function waText(type){let b=currentBookingDraft(),date=b.dates.length===1?fmtDate(b.dates[0]):`${fmtDate(b.dates[0])} to ${fmtDate(b.dates[b.dates.length-1])} (${b.dates.length} night${b.dates.length===1?'':'s'})`,pay=b.paymentMethod?b.paymentMethod.toUpperCase():'Not specified',status=b.payment==='paid'?'Paid':b.payment==='cancelled'?'Cancelled':'Pending';let intro=`Hello ${b.guest},`;let confirmation=`${intro}\n\nYour booking at ${b.property}, ${b.rooms.join(', ')} is confirmed.\n\n📅 Booking date: ${date}\n🕚 Check-in: from 11:00 AM\n🕙 Check-out: by 10:00 AM\n👥 Guests: ${b.guests}\n💰 Amount: ${money(b.amount)}\n💳 Payment: ${pay} (${status})\n\n📞 Stay contact: 9845714637\n\n🚗 Parking/vehicle policy: Due to the narrow road, four-wheelers above 3.5 meters are not allowed. Only small four-wheelers with a total length of 3.5 meters or less are allowed.\n`;let thank=`Thank you for choosing ${b.property}! We appreciate your booking and look forward to hosting you. 😊`;let check=`Check-in details for your stay:\n\n📍 ${b.property}${b.location?` — ${b.location}`:''}\n🕚 Check-in from 11:00 AM\n🕙 Check-out by 10:00 AM\n🔑 Key collection: Please use the lockbox beside the room door.\n📞 If you need any assistance, please contact us.\n\nWe look forward to welcoming you!`;if(type==='confirmation')return confirmation.trim();if(type==='thankyou')return `${intro}\n\n${thank}`;if(type==='checkin')return `${intro}\n\n${check}`;return `${confirmation}\n\n${thank}\n\n${check}`}
+async function shareBookingVideo(msg){
+  // Prefer the native Android share sheet so the video can be attached to WhatsApp.
+  // A wa.me URL cannot attach a local video file by itself.
 
-<nav>
-<div class="logo">RESTIOR HOMESTAYS</div>
+  const n=waNumber($('fPhone').value);
+  if(n.length<12){toast('Add a valid WhatsApp number first');return false}
+  try{
+    const file=bookingVideoFile;
+    if(file && navigator.share){
+      let shareable=false;
+      try{ shareable = !!navigator.canShare && navigator.canShare({files:[file]}); }catch(e){ shareable=false; }
+      if(shareable){
+        await navigator.share({text:msg,files:[file],title:'Restior Stays booking confirmation'});
+        toast('Choose WhatsApp in the share sheet, then tap Send');
+        return true;
+      }
+    }
+    openWaMessage(msg);
+    toast('WhatsApp opened. Video attachment is not supported in this browser.');
+    return false;
+  }catch(err){
+    if(err && err.name==='AbortError')return false;
+    openWaMessage(msg);
+    toast('WhatsApp opened. Attach the check-in video manually if needed.');
+    return false;
+  }
+}
+function sendWhatsAppWithVideo(type='all'){shareBookingVideo(waText(type))}
+function sendWhatsApp(type='all'){openWaMessage(waText(type))}
+function resizeAadhaar(file,maxW=1200,maxH=900,quality=.72){
+  return new Promise((resolve,reject)=>{
+    if(!file)return resolve('');
+    if(!file.type.startsWith('image/'))return reject(new Error('Please choose an image file'));
+    const reader=new FileReader();
+    reader.onload=()=>{
+      const img=new Image();
+      img.onload=()=>{
+        const scale=Math.min(1,maxW/img.width,maxH/img.height);
+        const c=document.createElement('canvas');c.width=Math.max(1,Math.round(img.width*scale));c.height=Math.max(1,Math.round(img.height*scale));
+        c.getContext('2d').drawImage(img,0,0,c.width,c.height);
+        resolve(c.toDataURL('image/jpeg',quality));
+      };
+      img.onerror=()=>reject(new Error('Could not read image'));
+      img.src=reader.result;
+    };
+    reader.onerror=()=>reject(new Error('Could not read image'));
+    reader.readAsDataURL(file);
+  });
+}
+function getAadhaarPhoto(){return pendingAadhaarPhoto||(editingKey&&bookings[editingKey]?.aadhaarPhoto)||''}
+function saveBooking(){
+  try {
+    const primaryRid=$('fRoom').value,roomIds=bookingRoomIds(),checkinDate=$('fCheckinDate').value,checkoutDate=$('fCheckoutDate').value;
+    if(!primaryRid||!roomIds.length||!checkinDate||!checkoutDate){toast('Choose check-in, check-out and at least one room');return false}
+    if(checkoutDate<=checkinDate){toast('Check-out must be after check-in');return false}
+    const dates=rangeDates(checkinDate,checkoutDate);if(!dates.length){toast('Please choose valid dates');return false}
+    const phone=$('fPhone').value.trim(),digits=phone.replace(/\D/g,'');if(phone&&digits.length!==10){toast('Enter a valid 10-digit WhatsApp number');return false}
+    const willBook=$('fPayment').value!=='cancelled';if(willBook&&!phone){toast('Add the guest WhatsApp number');return false}
+    const aadhaarPhoto=getAadhaarPhoto();
+    const oldBooking=editingKey?bookings[editingKey]:null,bookingId=oldBooking?.bookingId||('B'+Date.now());
+    const oldGroupIds=oldBooking?.bookingId?[...new Set(Object.values(bookings).filter(x=>x?.bookingId===oldBooking.bookingId).map(x=>x.roomId).filter(Boolean))]:[editingKey?editingKey.split('_').slice(1).join('_'):primaryRid];
+    // Every selected room must be free for every night, except rooms belonging to this booking.
+    for(const rid of roomIds){for(const date of dates){const existing=bookings[key(date,rid)];if(willBook&&existing?.booked&&existing.bookingId!==bookingId){toast(`Room ${roomObj(rid)?.room||''} is already booked on ${fmtDate(date)}`);return false}}}
+    // Remove old room/date cells no longer part of this grouped booking.
+    for(const rid of oldGroupIds){for(const date of (oldBooking?.stayDates||dates)){if(!roomIds.includes(rid)||!dates.includes(date)){const k=key(date,rid);if(bookings[k]?.bookingId===bookingId)delete bookings[k]}}}
+    const common={booked:willBook,bookingId,guest:$('fGuest').value.trim(),phone:digits,checkinDate,checkoutDate,checkin:$('fCheckin').value||'11:00',checkout:$('fCheckout').value||'10:00',guests:Number($('fGuests').value||1),payment:$('fPayment').value,paymentMethod:$('fPaymentMethod').value,source:$('fSource').value,notes:$('fNotes').value.trim(),aadhaarPhoto,stayDates:dates,stayTotal:Number($('fAmount').value||0),updated:new Date().toISOString()};
+    roomIds.forEach((rid)=>dates.forEach((date,i)=>{const k=key(date,rid);bookings[k]={...(bookings[k]||{}),...common,roomId:rid,amount:(rid===primaryRid&&i===0)?Number($('fAmount').value||0):0,advance:(rid===primaryRid&&i===0)?Number($('fAdvance').value||0):0}}));
+    editingKey=key(dates[0],primaryRid);localStorage.setItem('restiorBookingsV2',JSON.stringify(bookings));localStorage.setItem('restiorProps',JSON.stringify(props));
+    const msg=willBook?waText('all'):null;closeModal();renderAll();toast(willBook?`Booking saved · ${roomIds.length} room${roomIds.length===1?'':'s'} · ${dates.length} night${dates.length===1?'':'s'}`:'Booking saved successfully');celebrate();selectedDates=[];multiSelectMode=false;if(willBook&&msg)shareBookingVideo(msg);scheduleCloudSync();return true;
+  }catch(err){console.error(err);toast('Could not save booking. Please try again.');return false}
+}
 
-<ul>
-<li><a href="#about">About</a></li>
-<li><a href="#amenities">Amenities</a></li>
-<li><a href="#gallery">Gallery</a></li>
-<li><a href="#attractions">Attractions</a></li>
-<li><a href="#reviews">Reviews</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</nav>
-
-<header>
-<div class="hero-content">
-<h1>RESTIOR HOMESTAYS</h1>
-<p>Comfort • Privacy • Relaxation</p>
-<p>Affordable Private Stay in Katapadi, Udupi by IRD</p>
-<p><strong>Starting from ₹699 Per Night</strong></p>
-
-<a class="btn"
-href="https://wa.me/919036074577?text=Hello%20Restior%20Homestay,%20I%20would%20like%20to%20book%20a%20room."
-target="_blank">
-Book on WhatsApp </a>
-
-</div>
-</header>
-
-<section id="about">
-<h2 class="section-title">Welcome to Restior Homestay</h2>
-
-<div class="about">
-Enjoy a peaceful and affordable stay in Katapadi, Udupi. Our homestay offers a clean AC room, free Wi-Fi, kitchenette, microwave oven, free parking, and a relaxing atmosphere perfect for couples, families, and travelers.
-</div>
-</section>
-
-<section id="amenities">
-<h2 class="section-title">Amenities</h2>
-
-<div class="features">
-<div class="card">❄️ Air Conditioning</div>
-<div class="card">📶 High-Speed Wi-Fi</div>
-<div class="card">🛏️ Comfortable Double Bed</div>
-<div class="card">🍵 Electric Kettle</div>
-<div class="card">🔥 Microwave Oven</div>
-<div class="card">🍽️ Kitchenette</div>
-<div class="card">🚗 Free Parking</div>
-<div class="card">🏠 Private Stay</div>
-</div>
-</section>
-
-<section id="gallery">
-<h2 class="section-title">Gallery</h2>
-
-<div class="gallery">
-<img src="photo1.jpg.jpeg" alt="Bedroom">
-<img src="photo2.jpg.jpeg" alt="Room Interior">
-<img src="photo3.jpg.jpeg" alt="Kitchenette">
-<img src="photo4.jpg.jpeg" alt="Washroom">
-<img src="photo5.jpg.jpeg" alt="Property View">
-<img src="photo6.jpg.jpeg" alt="Guest Area">
-</div>
-</section>
-
-<section id="attractions">
-<h2 class="section-title">Nearby Attractions</h2>
-
-<div class="attractions">
-
-<div class="card">
-🏖️
-<h3>Mattu Beach</h3>
-<p>Peaceful beach known for stunning sunsets, clean shores, and a relaxing atmosphere.</p>
-</div>
-
-<div class="card">
-🏖️
-<h3>Malpe Beach</h3>
-<p>Popular beach destination offering beautiful sea views, water sports, and boat rides.</p>
-</div>
-
-<div class="card">
-🏝️
-<h3>St. Mary's Island</h3>
-<p>Famous for its unique basalt rock formations and picturesque coastal scenery.</p>
-</div>
-
-<div class="card">
-🛕
-<h3>Udupi Sri Krishna Temple</h3>
-<p>One of Karnataka's most revered temples, known for its rich heritage and spiritual significance.</p>
-</div>
-
-<div class="card">
-🌅
-<h3>Kaup Beach Lighthouse</h3>
-<p>Historic lighthouse offering breathtaking panoramic views of the Arabian Sea.</p>
-</div>
-
-<div class="card">
-🎓
-<h3>Manipal</h3>
-<p>A vibrant educational and cultural hub with cafes, shopping, and attractions.</p>
-</div>
-
-<div class="card">
-🌴
-<h3>Delta Beach</h3>
-<p>A serene beach where the river meets the sea, perfect for nature lovers and photography.</p>
-</div>
-
-<div class="card">
-🚤
-<h3>Kodi Bengre</h3>
-<p>Scenic coastal village known for beautiful backwaters, river views, and boat rides.</p>
-</div>
-
-</div>
-</section>
-
-<section id="reviews">
-<h2 class="section-title">Guest Reviews</h2>
-
-<div class="reviews">
-
-<div class="card">
-★★★★★
-<br><br>
-Very clean room and peaceful atmosphere. Excellent value for money.
-</div>
-
-<div class="card">
-★★★★★
-<br><br>
-Comfortable stay with all amenities. Highly recommended.
-</div>
-
-<div class="card">
-★★★★★
-<br><br>
-Great location and smooth check-in experience.
-</div>
-
-</div>
-</section>
-
-<section id="contact">
-<h2 class="section-title">Contact Us</h2>
-
-<div class="contact">
-<p>📞 Call: 9036074577</p>
-<p>💬 WhatsApp: 9036074577</p>
-<p>📍 Katapadi, Udupi, Karnataka</p>
-
-<p>
-<a href="https://maps.app.goo.gl/6Z2Qkjr8E9Mx1QMM8" target="_blank">
-View on Google Maps
-</a>
-</p>
-
-<p><strong>Price:</strong> ₹699 / Night</p>
-<p><strong>Maximum Guests:</strong> 3</p>
-<p><strong>Check-in:</strong> 11:00 AM</p>
-<p><strong>Check-out:</strong> 10:00 AM</p>
-</div>
-</section>
-
-<footer>
-<p>© 2026 Restior Homestay. All Rights Reserved.</p>
-</footer>
-
-<a class="whatsapp"
-href="https://wa.me/919036074577?text=Hello%20Restior%20Homestay,%20I%20would%20like%20to%20book%20a%20room."
-target="_blank">
-💬 </a>
-
-</body>
-</html>
+function deleteBooking(){
+  if(!editingKey)return;
+  if(!confirm('Delete this booking?\n\nFirst confirmation: the reservation will be removed.'))return;
+  if(!confirm('Please confirm again.\n\nSecond confirmation: all rooms and stay dates in this booking will be permanently removed from this device.'))return;
+  const b=bookings[editingKey],bookingId=b?.bookingId;
+  if(bookingId){Object.keys(bookings).forEach(k=>{if(bookings[k]?.bookingId===bookingId)delete bookings[k]})}
+  else {let rid=editingKey.split('_').slice(1).join('_');let dates=(b&&Array.isArray(b.stayDates)&&b.stayDates.length)?b.stayDates:[editingKey.split('_')[0]];dates.forEach(d=>delete bookings[key(d,rid)])}
+  editingKey=null;selectedDates=[];multiSelectMode=false;closeModal();saveLocal();renderAll();toast('Booking deleted')}
+function addProperty(){let name=prompt('Property name');if(!name)return;let location=prompt('Location / area','Udupi');let r=Number(prompt('Number of rooms','4'))||4;props.push({id:'p'+Date.now(),name,location,rooms:r});store();toast('Property added')}
+function editProperty(id){let p=props.find(x=>x.id===id);if(!p)return;let name=prompt('Property name',p.name);if(name===null)return;let location=prompt('Location',p.location);let r=Number(prompt('Number of rooms',p.rooms))||p.rooms;p.name=name;p.location=location||p.location;p.rooms=r;store();toast('Property updated')}
+function goView(id){document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.view===id));document.querySelectorAll('.view').forEach(v=>v.classList.toggle('active',v.id===id));if(id==='bookingsView')renderBookings();window.scrollTo({top:0,behavior:'smooth'})}
+document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>goView(b.dataset.view));
+function toast(m){let t=$('toast');t.textContent=m;t.classList.add('show');clearTimeout(window.toastT);window.toastT=setTimeout(()=>t.classList.remove('show'),2200)}function celebrate(){for(let i=0;i<14;i++){let s=document.createElement('span');s.className='confetti';s.style.left=(50+Math.random()*16-8)+'%';s.style.top='45%';s.style.background=['#1769e8','#18b7d6','#1ca66f','#f2ad22','#7440cf'][i%5];s.style.setProperty('--x',(Math.random()*190-95)+'px');s.style.setProperty('--y',(Math.random()*180+40)+'px');document.body.appendChild(s);setTimeout(()=>s.remove(),950)}}
+function exportData(){let data={version:3,exportedAt:new Date().toISOString(),properties:props,bookings};let blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='restior-stays-backup.json';a.click();URL.revokeObjectURL(a.href);toast('Backup exported')}
+function openSettings(){$('settingsBg').classList.add('open')}function closeSettings(){$('settingsBg').classList.remove('open')}function clearCloud(){toast('Cloud sync is disabled in this version')}
+fetch('checkin-booking-video.mp4',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('Video unavailable');return r.blob()}).then(b=>{bookingVideoFile=new File([b],'Restior-Stays-Check-in-Details.mp4',{type:'video/mp4'});toast('Check-in video ready to share')}).catch(()=>{bookingVideoFile=null;console.warn('Check-in video could not be loaded')});$('saveBookingBtn')?.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();saveBooking()});const handleAadhaarFile=async function(input){if(input.files?.[0]){try{setAadhaarPreview(await resizeAadhaar(input.files[0]));if($('fAadhaar')!==input)$('fAadhaar').value=''}catch(e){toast(e.message);input.value=''}}};$('fAadhaar')?.addEventListener('change',function(){handleAadhaarFile(this)});$('fAadhaarGallery')?.addEventListener('change',function(){handleAadhaarFile(this)});
+$('fCheckinDate')?.addEventListener('change',function(){if(!this.value)return;const out=$('fCheckoutDate');if(!out.value||out.value<=this.value)out.value=nextDate(this.value);selectedDates=rangeDates(this.value,out.value);updateSelectedDatesSummary();renderBookingRooms(bookingRoomIds())});$('fCheckoutDate')?.addEventListener('change',function(){const a=$('fCheckinDate').value,b=this.value;if(!a||!b)return;if(b<=a){this.value=nextDate(a);toast('Checkout must be after check-in');}selectedDates=rangeDates(a,this.value);updateSelectedDatesSummary();renderBookingRooms(bookingRoomIds())});$('fDate')?.addEventListener('change',function(){if(this.value){selectedDates=[this.value];syncFormDatesFromSelection();renderAll()}});$('fRoom')?.addEventListener('change',function(){renderBookingRooms(bookingRoomIds())});$('removeAadhaar')?.addEventListener('click',function(){if(editingKey&&bookings[editingKey]){delete bookings[editingKey].aadhaarPhoto;saveLocal();scheduleCloudSync()}resetAadhaarPreview()});$('modalBg').onclick=e=>{if(e.target.id==='modalBg')closeModal()};$('settingsBg').onclick=e=>{if(e.target.id==='settingsBg')closeSettings()};renderAll();
+</script></body></html>
